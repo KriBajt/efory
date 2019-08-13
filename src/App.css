@@ -162,6 +162,22 @@ body {
     margin: 0.2rem !important;
   }
 
+  .btn-sklep {
+    margin: 0.2rem !important;
+  }
+
+  .btn-do-koszyka {
+    margin: 0.2rem !important;
+
+  }
+
+  #modal {
+    margin-top: 5rem !important;
+    padding: 1rem !important;
+    border-radius: 1rem;
+
+  }
+
 
 
   /* #modal {
