@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 :root {
-  --mainBlue: #b8b8b8;
-  --lightBlue: #009ffd;
+  --mainBlue: #dadada;
+  --lightBlue: #d62424;
   --mainWhite: #ffffff;
-  --mainDark: #232528;
-  --mainYellow: #fde507;
+  --mainDark: #8289a3;
+  --mainYellow: #696969;
 
 }
 
@@ -51,38 +50,127 @@ body {
   color: var(--mainYellow);
 
 }
-=======
-.App {
-  text-align: center;
+
+.navbar-brand {
+  margin-left: 100px;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 964px) {
+  .navbar-brand {
+    margin-left: 2px;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  img.navbar-brand {
+    height: 3.5rem !important;
   }
+
+
+  h1 {
+    font-size: 1.2rem !important;
+
+  }
+
+  h4 {
+    font-size: 1rem !important;
+  }
+
+  h5 {
+    font-size: 1rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+    text-align: justify;
+  }
+
+  button {
+    font-size: 1.2rem !important;
+
+  }
+
 }
->>>>>>> Initial commit from Create React App
+
+@media (max-width: 440px) {
+
+  img.navbar-brand {
+    height: 3.5rem !important;
+  }
+
+  h1 {
+    font-size: 1.2rem !important;
+
+  }
+
+  h4 {
+    font-size: 0.9rem !important;
+  }
+
+  h5 {
+    font-size: 0.8rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    text-align: justify;
+  }
+
+  button {
+    font-size: 0.8rem !important;
+
+  }
+
+  /* #modal {
+    border-radius: 1rem !important;
+    margin-top: rem;
+  }
+
+  .img-fluid {
+    height: 150px !important;
+  } */
+
+}
+
+@media (max-width: 321px) {
+
+  img.navbar-brand {
+    height: 3rem !important;
+  }
+
+  h1 {
+    font-size: 1rem !important;
+
+  }
+
+  h4 {
+    font-size: 0.9rem !important;
+  }
+
+  h5 {
+    font-size: 0.8rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    text-align: justify;
+  }
+
+  .btn-powrot {
+    margin: 0.2rem !important;
+  }
+
+
+
+  /* #modal {
+    border-radius: 1rem !important;
+    margin-top: rem;
+  }
+
+  .img-fluid {
+    height: 150px !important;
+  } */
+
+}

@@ -14,7 +14,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <h1 style={{ textAlign: 'center' }}>Sklep aktualnie jest wyłączony. Zamówienia prosimy składać mailowo na biuro@ledbecool.pl lub biuro@aipoz.pl</h1>
+      <h1 style={{ textAlign: 'center' }}>Sklep aktualnie jest wyłączony. Zamówienia prosimy składać mailowo na biuro@ledbecool.pl</h1>
       <Switch>
         <Route exact path="/" component={ProductList} />
         <Route path="/details" component={Details} />

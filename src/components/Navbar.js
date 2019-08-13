@@ -1,45 +1,67 @@
 import React, { Component } from 'react'
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    Nav
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
-import logo from '../logoefory2.png';
+import logo from '../logoeforylogo.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
+import Regulamin from './Regulamin';
+import { FaAlignRight } from 'react-icons/fa';
 
-export default class Navbar extends Component {
+export default class Example extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            isOpen: false
+        };
+    }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-                {/* https://www.iconfinder.com/icons/1243689/call_phone_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/Makoto_msk */}
-                <Link to='/'>
-                    <img src={logo} alt="store" className="navbar-brand" style={{ height: '100px' }} />
-                </Link>
-                <ul className="navbar-nav align-item-center">
-                    <li className="nav-item ml-5">
-                        <Link to="/" className="nav-link">
-                            produkty
-                        </Link>
-                    </li>
-                </ul>
-                <Link to='/cart' className="ml-auto">
-                    <ButtonContainer>
-                        <span className="mr-2">
-                            <i className="fas fa-cart-plus"> koszyk </i>
-                        </span>
-                    </ButtonContainer>
-                </Link>
-            </NavWrapper>
-        )
+            <div className="sticky-top navbar-dark indigo" >
+                <Navbar color="dark" dark expand="md" >
+
+                    <Link to='/'>
+                        <img src={logo} alt="store" className="navbar-brand" style={{ height: '100px' }} />
+                    </Link>
+                    <NavbarToggler onClick={this.toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
+                            <Link to="/" className="nav-link">
+                                produkty
+                                    </Link>
+                            <Link to="/" className="nav-link">
+                                o nas
+                                        </Link>
+                            <Link to="/Regulamin" className="nav-link">
+                                regulamin
+                                </Link>
+                        </Nav>
+                    </Collapse>
+
+                    <Link to='/cart' className="ml-auto" >
+                        <ButtonContainer style={{ float: 'right', fontSize: '0.9rem' }}>
+                            <span className="mr-2 ">
+                                <i className="fas fa-cart-plus "> koszyk </i>
+                            </span>
+                        </ButtonContainer>
+
+                    </Link>
+
+                </Navbar>
+
+
+            </div >
+        );
     }
 }
-
-const NavWrapper = styled.nav`
-background:var(--mainBlue);
-.nav-link {
-    color:var(--mainWhite) !important;
-    font-size:1.3rem;
-    text-transform:capitalize !important;
-
-}
-
-`

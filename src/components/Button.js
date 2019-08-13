@@ -13,6 +13,9 @@ padding:0.2rem 0.5rem;
 cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0rem;
 transition:all 0.5s easy-in-out;
+outline:none !important;
+margin-left:2rem;
+
 
 &:hover{
     background: ${prop =>
@@ -21,6 +24,8 @@ transition:all 0.5s easy-in-out;
 }
 &focus{
     outline:none;
+    
+
 }
 
 `

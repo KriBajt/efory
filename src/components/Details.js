@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import { ProductConsumer } from '../context'
 import { Link } from 'react-router-dom'
 import { ButtonContainer } from './Button';
+import TechnicalDescription from './TechnicalDescription';
 
 export default class Details extends Component {
     render() {
+
         return (
             <ProductConsumer>
                 {(value) => {
@@ -15,7 +17,8 @@ export default class Details extends Component {
                         info,
                         price,
                         title,
-                        inCart
+                        inCart,
+
                     } = value.detailProduct;
                     return (
                         <div className="container py-5">
@@ -31,25 +34,23 @@ export default class Details extends Component {
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                     <h4>model: {title}</h4>
                                     <h4 className="text-title text-uppercase text-muted mt-3 mb-2">Producent:
-                                     <span className="text-uppercase">{company}</span></h4>
+                                        <span className="text-uppercase">{company}</span></h4>
                                     <h4 className="text-blue">
                                         <strong>
                                             cena: {price} <span>PLN </span>
                                         </strong>
                                     </h4>
-                                    <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                                        Informacja o produkcie
-                                    </p>
-                                    <p className="text-muted lead ">
+
+                                    <p className="text-muted lead  ">
                                         {info}
                                     </p>
                                     {/* buttons */}
                                     <Link to="/">
-                                        <ButtonContainer>
+                                        <ButtonContainer className="btn-powrot">
                                             Powrót do produktu
                                         </ButtonContainer >
                                     </Link>
-                                    <ButtonContainer
+                                    <ButtonContainer className="btn-powrot"
 
                                         disabled={inCart ? true : false}
                                         onClick={() => {
@@ -59,11 +60,16 @@ export default class Details extends Component {
                                         {inCart ? "W koszyku" : "Dodaj do koszyka"}
                                     </ButtonContainer>
                                 </div>
+                                <TechnicalDescription />
+
                             </div>
                         </div>
                     )
                 }}
+
             </ProductConsumer>
+
         )
     }
+
 }
