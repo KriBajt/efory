@@ -51,7 +51,7 @@ export default class Example extends React.Component {
 
                     <Link to='/cart' className="ml-auto" >
                         <ButtonContainer style={{ float: 'right', fontSize: '0.9rem' }}>
-                            <span className="mr-2 ">
+                            <span className="mr-0 ">
                                 <i className="fas fa-cart-plus "> koszyk </i>
                             </span>
                         </ButtonContainer>

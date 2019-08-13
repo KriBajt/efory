@@ -7,6 +7,11 @@
 
 }
 
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 body {
   font-family: 'Oswald', sans-serif, sans-serif !important;
   background: var(--mainWhite) !important;
@@ -53,7 +58,6 @@ body {
 
 .navbar-brand {
   margin-left: 100px;
-  padding: 0.2rem;
   margin-bottom: 0.5rem;
 }
 
