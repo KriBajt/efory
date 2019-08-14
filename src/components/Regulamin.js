@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Regulamin() {
     return (
-        <div>
-
+        <div className="container">
+            <p>Regulamin</p>
         </div>
     )
 }
