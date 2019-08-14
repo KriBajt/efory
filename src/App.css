@@ -10,10 +10,13 @@
 .row {
   padding: 0 !important;
   margin: 0 !important;
+
 }
 
 body {
-  font-family: 'Oswald', sans-serif, sans-serif !important;
+  /* font-family: 'Oswald', sans-serif, sans-serif !important; */
+  font-family: 'Roboto' !important;
+
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
@@ -89,7 +92,7 @@ body {
 .left-panel {
   background-color: #fbfbfb;
   border-radius: .5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-left: 2rem;
   margin-top: 3rem;
   text-align: center;
@@ -104,14 +107,15 @@ body {
 }
 
 a.nav-link-left {
-  padding: 1rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-top: .8rem;
   text-decoration: none !important;
-  background-color: #ebebeb;
+  text-align: left !important;
 }
 
 a.nav-link-left:hover {
-  color: red !important;
+  color: var(--lightBlue) !important;
 
 }
 

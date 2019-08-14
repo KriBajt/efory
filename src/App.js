@@ -12,6 +12,13 @@ import Modal from './components/Modal';
 import Regulamin from './components/Regulamin';
 import Footer from './components/Footer';
 import LeftMainNav from './components/LeftMainNav';
+import Automatyka from './components/ProductGroups/Automatyka';
+import Elektronika from './components/ProductGroups/Elektronika';
+import Rekodziela from './components/ProductGroups/Rekodziela';
+import Uslugi from './components/ProductGroups/Uslugi';
+import Onas from './components/Onas';
+import WarzywaOwoce from './components/ProductGroups/WarzywaOwoce';
+
 
 function App() {
   return (
@@ -28,8 +35,15 @@ function App() {
           <Switch className="right-panel">
             <Route exact path="/" component={ProductList} />
             <Route path="/details" component={Details} />
+            <Route path="/onas" component={Onas} />
             <Route path="/cart" component={Cart} />
-            <Route paty="/regulamin" component={Regulamin} />
+            <Route path="/regulamin" component={Regulamin} />
+            <Route path="/automatyka" component={Automatyka} />
+            <Route path="/rekodziela" component={Rekodziela} />
+            <Route path="/uslugi" component={Uslugi} />
+            <Route path="/warzywa-owoce" component={WarzywaOwoce} />
+            <Route path="/elektronika" component={Elektronika} />
+
             <Route component={Default} />
           </Switch>
         </div>
