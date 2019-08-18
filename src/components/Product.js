@@ -100,7 +100,8 @@ const ProductWrapper = styled.div`
     background: var(--lightBlue);
     color: var(--mainWhite);
     font-size:1.4rem;
-    border-radius:0.5rem 0 0 0 ;
+    border-radius:0.5rem 0 0 0;
+    border:none;
     transform:translate(100%,100%);
 }
 .img-container:hover .cart-btn{
@@ -109,7 +110,7 @@ const ProductWrapper = styled.div`
 
 }
 .cart-btn:hover{
-    color:var(--mainBlue);
+    color:var(--mainCheck);
     cursor:pointer;
 }
 `

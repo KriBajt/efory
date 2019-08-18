@@ -20,7 +20,7 @@ margin-left:2rem;
 &:hover{
     background: ${prop =>
         prop.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-    color:var(--mainBlue);
+    color:var(--mainCheck);
 }
 &focus{
     outline:none;
