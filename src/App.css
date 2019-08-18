@@ -156,6 +156,14 @@ p {
 
   }
 
+  .left-panel {
+    font-size: .7rem;
+    margin-top: 3rem;
+    height: 350px;
+
+  }
+
+
 }
 
 @media (max-width: 440px) {
@@ -183,12 +191,18 @@ p {
   }
 
   button {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
 
   }
 
-  .nav-link-left {
-    display: none;
+  .left-panel {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+
   }
 
 }
@@ -227,6 +241,11 @@ p {
 
   .btn-do-koszyka {
     margin: 0.2rem !important;
+
+  }
+
+  button {
+    font-size: 0.5rem !important;
 
   }
 

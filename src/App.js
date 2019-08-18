@@ -27,11 +27,11 @@ function App() {
       <h1 style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '2rem' }}>Sklep aktualnie jest wyłączony. Zamówienia prosimy składać mailowo na biuro@ledbecool.pl</h1>
 
       <div class="row">
-        <div class="left-panel ">
+        <div class="left-panel col-xs-12  ">
           <LeftMainNav />
         </div>
 
-        <div class="col-9">
+        <div class="col-xl-9 col-md-8 col-xs-12 ">
           <Switch className="right-panel">
             <Route exact path="/" component={ProductList} />
             <Route path="/details" component={Details} />
@@ -48,9 +48,9 @@ function App() {
           </Switch>
         </div>
         <Modal />
-        <div class="col">
+        {/* <div class="col">
           reklamy
-    </div>
+    </div> */}
       </div>
 
       {/* <Footer /> */}
